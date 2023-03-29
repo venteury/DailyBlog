@@ -1,0 +1,23 @@
+<%- include("./headFoot/header.ejs"); -%>
+
+<h3>Compose :</h3>
+
+<form action="/compose" method="post">
+    <div class="mb-3 Title">
+        <input type="text"  name="title" class="form-control" placeholder="Title">
+    </div>
+
+  <div class="form-floating mb-3 comment" >
+    <textarea
+      class="form-control"
+      placeholder="Write your content here...."
+      style="height: 100px"
+      name="postContent"
+    ></textarea>
+  </div>
+  <div class="publishBtn">
+  <button type="submit" class="btn btn-primary btn-lg" >Publish</button>
+  </div>
+</form>
+
+<%- include("./headFoot/footer.ejs"); -%>
